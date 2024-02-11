@@ -1,25 +1,203 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+.container {
+  width: 355px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  margin-top: 15px;
+  margin-left: 25px;
+
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.button-active {
+  background-color: #4e75ff;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+ul {
+  list-style: none;
+}
+
+li a {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clock-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.clock-wrapper input {
+  width: 272px;
+  height: 40px;
+  padding-left: 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: inherit;
+}
+
+.clock-wrapper button {
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 55px;
+  height: 48px;
+}
+
+.value {
+  color: #2e2f42;
+  font-size: 40px;
+  line-height: 1.2;
+  /* 120% */
+  letter-spacing: 1.6px;
+}
+
+.label {
+  color: #2e2f42;
+  line-height: 1.5;
+  /* 150% */
+}
+
+.icon-true {
+  background-image: url('../img/bi_check2-circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-false {
+  background-image: url('../img/bi_x-octagon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.iziToast {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.form {
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  stroke-width: 1px;
+  width: 375px;
+  height: 64px;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+fieldset:hover,
+fieldset:active {
+  border-color: #000;
+}
+
+label,
+legend {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+legend {
+  margin-left: 28px;
+}
+
+.inputMs {
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+  margin-top: 8px;
+}
+
+.inputMs:hover {
+  border: 1px solid #000;
+}
+
+.inputMs:active {
+  border: 1px solid #4e75ff;
+}
+
+.inputState:last-child {
+  margin-left: 40px;
+}
+
+button {
+  border-radius: 8px;
+  background: #4e75ff;
+  display: flex;
+  width: 380px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  border: none;
+}
+
+button:hover {
+  background: #6c8cff;
 }
